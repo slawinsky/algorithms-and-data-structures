@@ -18,9 +18,9 @@ public class QuickSort {
     }
 
     private static int partition(int[] arr, int l, int r) {
-        int i = l + 1;
-        int j = r;
-        int p = arr[l]; //pivot
+        int i = l + 1; // 2
+        int j = r; // 6 5
+        int p = arr[l]; //pivot 1
         int tmp;
         do {
             while ((i < r) && (arr[i] <= p)) i++;
@@ -37,7 +37,7 @@ public class QuickSort {
             return i - 1;
         } else {
             arr[l] = arr[i];
-            arr[i] = arr[p];
+            arr[i] = p;
             return i;
         }
     }
