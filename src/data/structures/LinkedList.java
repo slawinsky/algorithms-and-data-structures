@@ -2,6 +2,8 @@ package data.structures;
 
 import org.w3c.dom.Node;
 
+//TODO
+
 public class LinkedList {
     Node head;
 
